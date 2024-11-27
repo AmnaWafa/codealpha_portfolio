@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F3FA;
+    color: #2E2E2E;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+}
+ul{
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #2E2E2E;
+}
+button{
+    width: 30%;
+    padding: 10px;
+    margin-top:5px;
+    background-color: #DEB8D3;
+    color: #2E2E2E;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+button:hover{
+    box-shadow: 2px 2px 5px #2B2D42;
+    transform: scale(1.05);
+}
+ul li{
+    list-style-type: none;
+}
+nav{
+    background-color: #DEB8D3;
+    position: absolute;
+    top: 0; 
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+}
+nav ul a:hover{
+    color: #2B2D42;
+}
+#hero{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+#hero-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#hero div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero div img{
+    margin-top: 80px;
+    width: 70%;
+    border-radius: 50%;
+}
+section{
+    background-color: #DEB8D3 ;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+#about, #services{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+#about div{
+    background-color: #F5F3FA;
+    border-radius: 10px;
+    margin: 10px 30px;
+    padding: 20px;
+}
+#projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* #projects .card img{
+    width: 100%;
+} */
+#services{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    background-color: #F5F3FA;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+.card:hover{
+    box-shadow: 2px 2px 10px #2B2D42;
+}
+ @media(max-width: 768px){
+    button{
+        width:60%;
+    }
+    nav ul a{
+        font-size: 0.7rem;
+    }
+    #hero{
+        margin-top: 70px;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    #hero-inner{
+        grid-row: 2;
+    }
+    #hero-img{
+        grid-row: 1;
+    }
+    #hero-img img{
+        width: 100%;
+        max-width: 250px;
+    }
+    #services,#projects{
+        grid-template-columns: 1fr;
+        margin: 10px 30px;
+    }
+ }
